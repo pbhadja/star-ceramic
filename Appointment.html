@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/tmp.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url("2.jpg");
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      width: 400px; /* Adjust width as needed */
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+      border-radius: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: darkblue;
+    }
+  </style>
+</head>
+<body>
+<form action="index.html" method="post">
+    <div class="main">
+      <div class="child">
+        <h1>Appointment</h1>
+
+        
+       <label for="name">Name:</label><br>
+       <input type="text" id="name" name="name"><br>
+    
+       <label for="email">Email:</label><br>
+       <input type="email" id="email" name="email"><br>
+    
+       <label for="phone">Phone:</label><br>
+       <input type="tel" id="phone" name="phone"><br>
+    
+       <label for="date">Preferred Date:</label><br>
+       <input type="date" id="date" name="date"><br>
+    
+       <label for="time">Preferred Time:</label><br>
+       <input type="time" id="time" name="time"><br>
+    
+       <label for="message">Message:</label><br>
+       <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+    
+     <input type="submit" value="Submit">          
+
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
